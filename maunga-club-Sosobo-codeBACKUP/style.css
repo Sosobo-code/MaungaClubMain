@@ -1,0 +1,252 @@
+/* TIP: use one stylesheet (this one) to style all of your pages */
+
+/* some generic styles for the whole site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #ecf1f5;
+}
+
+.topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #4a9cdd;
+}
+
+.topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 3px;
+}
+
+.topnav a:hover {
+    color: #0e274d;
+}
+
+/* another part */
+
+.showcase {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.imgcontainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imgcontainer img {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.75;
+    border-style: solid;
+    border-color: rgba(16, 99, 194, 0.76);
+    border-width: 7px;
+    border-radius: 50px;
+    background-image: url("img/mountain_view_light.jpg");
+}
+
+.content h1 {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.2;
+    padding: 50px;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+
+}
+
+.content h3 {
+    padding: 20px;
+    color: #ffffff;
+}
+
+
+/* Button */
+
+.bigarrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 15%;
+
+    animation-name: infiniteupdown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all .3s;
+    padding-bottom: 20px;
+}
+@keyframes infiniteupdown {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(-7.5px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+
+/* logo */
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+/* Smooth Scroll on Big arrow */
+
+.button {
+    scroll-behavior: smooth;
+}
+
+/* About section stolen from ultra bungee */
+
+.about {
+    display: flex;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    margin-top: 25px;
+    border-top: 5px solid rgba(16, 99, 194, 0.76);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#about h1 {
+    font-size: 20px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+    font-size: 30px;
+}
+
+#about p {
+    font-size: 15px;
+    color: white;
+    margin-top: 15px;
+}
+
+.social a {
+    margin: 0 5px;
+}
+
+/* landing animation */
+
+.logo {
+    animation: fade 3s ease;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* code for footer thank you codepen*/
+
+.footer{
+    background-color: rgb(53, 131, 203);
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+}
+
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color: #000d15;
+    font-size:0.8em;
+}
+
+.footer .row a{
+    text-decoration:none;
+    color: rgba(0, 13, 21, 0.75);
+    transition:0.5s;
+}
+
+.footer .row a:hover{
+    color:#fff;
+}
+
+.footer .row ul{
+    width:100%;
+}
+
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+
+@media (max-width:720px){
+    .footer{
+        text-align:left;
+        padding:5%;
+    }
+    .footer .row ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+    }
+    .footer .row a i{
+        margin:0% 3%;
+    }
+}
+
+
+
+

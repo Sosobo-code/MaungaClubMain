@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chaletcards.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="icon" href="img/m.png" type="image/icon type">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--FONT FOR LOGOS IN FOOTER-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Kakapo</title>
+</head>
+<body>
+<div class="topnav">
+    <a class="active" href="chalets.html">Chalets</a>
+    <a href="kakapo.html">Kākāpo</a>
+    <a href="pukeko.html">Pūkeko</a>
+    <a href="keruru.html">Kererū</a>
+    <a href="booking.html">Book Now</a>
+</div>
+
+<section class="showcase">
+    <div class="imgcontainer">
+        <img src="img/mountain_view_light.jpg" alt="mountain-img1">
+    </div>
+    <div class="content">
+        <h1>Pūkeko</h1>
+        <a class="button" href="#information"><img class="bigarrow" src="img/downarrow.png"></a>
+    </div>
+</section>
+<!-- New about section -->
+<div class="text">
+    <h1>Welcome to Pūkeko</h1>
+</div>
+<section class="about">
+    <div data-aos="flip-left"><div class="textpuk">
+        <h1>Pūkeko</h1>
+        <p>Pūkeko is a great chalet for large families/groups that are looking for a chalet to themselves. <br>Limits on the number of adults and children ensure a comfortable stay.<br><br><br></p>
+    </div></div>
+    <img class="s1c" src="img/pukeko/chalet_exterior.jpg">
+</section>
+<div class="textrooms">
+    <h1>Gallery</h1>
+</div>
+<section class="about">
+    <article class="gallery-large">
+        <div class="gallery-thumbs">
+            <a data-fancybox="gallery" href="img/pukeko/adult_bedroom.jpg"><img src="img/pukeko/adult_bedroom_thumb.jpg" alt="bedroomadult"></a>
+            <a data-fancybox="gallery" href="img/pukeko/bathroom.jpg"><img src="img/pukeko/bathroom_thumb.jpg" alt="bathroom"></a>
+            <a data-fancybox="gallery" href="img/pukeko/chalet_exterior.jpg"><img src="img/pukeko/chalet_exterior_thumb.jpg" alt="cabinview"></a>
+            <a data-fancybox="gallery" href="img/pukeko/chalet_view.jpg"><img src="img/pukeko/chalet_view_thumb.jpg" alt="chaletview"></a>
+        </div>
+        <p>Click on the images to enlarge.</p><br><br>
+    </article>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</section>
+<footer>
+    <div class="footer">
+        <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            2024 Maunga Club
+        </div>
+    </div>
+</footer>
+
+</body>
